@@ -65,7 +65,7 @@ async fn bar() {
     println!("bar() slept 1");
 }
 
-#[async_std::main]
+#[tokio::main]
 async fn main() {
     join!(foo(), bar());
 }
