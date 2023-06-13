@@ -18,7 +18,7 @@ async fn bar() {
     println!("bar() slept 1");
 }
 
-#[tokio::main()]
+#[tokio::main]
 async fn main() {
     join(foo(), bar()).await;
 }
