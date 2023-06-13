@@ -5,12 +5,12 @@ use std::time::Duration;
 use futures::future::join;
 
 async fn foo() {
-    std::thread::sleep(Duration::from_secs(3));
+    tokio::time::sleep(Duration::from_secs(3)).await;
     println!("foo() slept 3");
 }
 
 async fn bar() {
-    std::thread::sleep(Duration::from_secs(1));
+    tokio::time::sleep(Duration::from_secs(1)).await;
     println!("bar() slept 1");
 }
 

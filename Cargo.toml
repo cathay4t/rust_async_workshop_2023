@@ -13,6 +13,10 @@ name = "wrong_async_sleep"
 path = "wrong_async_sleep.rs"
 
 [[bin]]
+name = "correct_async_sleep"
+path = "correct_async_sleep.rs"
+
+[[bin]]
 name = "async_sleep_thread"
 path = "async_sleep_thread.rs"
 
